@@ -49,13 +49,13 @@ git checkout main
 Crea una nueva rama usando siempre el mismo nombre durante todo el proceso:
 
 ```bash
-git checkout -b Apellido-Area
+git checkout -b Apellido
 ```
 
 Ejemplo:
 
 ```bash
-git checkout -b Perez-Frontend
+git checkout -b Perez
 ```
 
 Esto crea la rama y cambia automáticamente hacia ella.
@@ -63,7 +63,7 @@ Esto crea la rama y cambia automáticamente hacia ella.
 > ⚠️ Si la rama ya existe (por ejemplo, porque continuas una sesión anterior), utiliza:
 
 ```bash
-git checkout Apellido-Area
+git checkout Apellido
 ```
 
 ---
@@ -120,13 +120,13 @@ Un buen mensaje de commit debe explicar claramente qué cambiaste.
 Envía tu rama al repositorio remoto:
 
 ```bash
-git push -u origin Apellido-Area
+git push -u origin Apellido
 ```
 
 Ejemplo:
 
 ```bash
-git push -u origin Perez-Frontend
+git push -u origin Perez
 ```
 
 Después de esta primera subida, solo será necesario usar:
@@ -210,13 +210,13 @@ Ahora tienes las últimas tareas fusionadas por el equipo.
 Cuando la tarea ya está guardada en `main`, elimina la rama antigua:
 
 ```bash
-git branch -d apellido-tarea1
+git branch -d apellido
 ```
 
 Ejemplo:
 
 ```bash
-git branch -d Perez-Frontend
+git branch -d Perez
 ```
 
 > ⚠️ Si Git muestra:
@@ -228,7 +228,7 @@ not fully merged
 puedes forzar la eliminación:
 
 ```bash
-git branch -D apellido-tarea1
+git branch -D apellido
 ```
 
 ---
@@ -238,13 +238,13 @@ git branch -D apellido-tarea1
 Comienza la siguiente tarea desde la versión actualizada:
 
 ```bash
-git checkout -b apellido-tarea2
+git checkout -b apellido
 ```
 
 Ejemplo:
 
 ```bash
-git checkout -b Perez-Backend
+git checkout -b Perez
 ```
 
 Ahora estás listo para comenzar un nuevo ejercicio 🚀
@@ -257,12 +257,12 @@ Ahora estás listo para comenzar un nuevo ejercicio 🚀
 |---|---|
 | Ir a main | `git checkout main` |
 | Actualizar proyecto | `git pull origin main` |
-| Crear rama | `git checkout -b nombre-rama` |
+| Crear rama | `git checkout -b nombre` |
 | Preparar cambios | `git add .` |
 | Crear commit | `git commit -m "mensaje"` |
-| Subir rama | `git push -u origin nombre-rama` |
+| Subir rama | `git push -u origin nombre` |
 | Ver estado | `git status` |
-| Eliminar rama | `git branch -d nombre-rama` |
+| Eliminar rama | `git branch -d nombre` |
 
 ---
 
