@@ -1,4 +1,4 @@
-# 22Angeles-Proyecto-Diseno
+# 22 Angeles Proyecto Diseño
 Este repositorio trae todo lo que hicimos en nuestro proyecto de Diseño Mecatrónico para el programa Ingeniería en Mecatrónica de la Universidad Militar Nueva Granada de Colombia
 
 # Si no quieren complicarse la vida
@@ -49,18 +49,10 @@ También puedes usar:
 .\crear_rama.bat
 ```
 
-El programa te pedirá tu apellido:
+El programa te pedirá tu apellido y área:
 
 ```text
-Introduce tu apellido: Valderrama
-```
-
-El `.bat` se encargará de:
-
-```text
-git checkout main
-git pull origin main
-git checkout -b Valderrama
+Introduce tu Apellido-Area: Valderrama-Finanzas 
 ```
 
 Al terminar, estarás trabajando en tu propia rama.
@@ -77,18 +69,10 @@ El programa te pedirá dos datos:
 
 ```text
 Introduce la descripcion del cambio: Añadido ejercicio 3
-Introduce tu apellido: Valderrama
+Introduce tu Apellido-Area: Valderrama-Finanzas
 ```
 
-El `.bat` hará automáticamente:
-
-```text
-git add .
-git commit -m "Añadido ejercicio 3 - Valderrama"
-git push -u origin Valderrama
-```
-
-Tus cambios quedarán subidos a GitHub en la rama `Valderrama`.
+Tus cambios quedarán subidos a GitHub en la rama `Valderrama-Finanzas`.
 
 ## Resumen
 
@@ -97,7 +81,7 @@ La idea es sencilla:
 ```text
 1. crear_rama.bat
    ↓
-   Escribes tu apellido
+   Escribes tu apellido y área
    ↓
    Se crea tu rama
 
@@ -106,7 +90,7 @@ La idea es sencilla:
 
 3. subir_cambios.bat
    ↓
-   Escribes la descripción y tu apellido
+   Escribes la descripción, tu apellido y área
    ↓
    Se crea el commit y se sube a GitHub
 ```
