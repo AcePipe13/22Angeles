@@ -19,6 +19,7 @@ git pull origin main
 ```
 
 Descarga los últimos cambios del repositorio remoto.
+(Si su terminal cambia de aspecto escriba ":wq", luego enter)
 
 ---
 
