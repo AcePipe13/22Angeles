@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../../SaludoESP32-RASP5"
+		},
+		{
+			"name": "ESP32-Rasp-INPUT",
+			"path": "../../ESP32-Rasp-INPUT"
+		},
+		{
+			"name": "ESP32_TOF400C_DISTANCIA",
+			"path": "../../ESP32_TOF400C_DISTANCIA"
+		},
+		{
+			"name": "ESP32_GPS_RXTX",
+			"path": "../../ESP32_GPS_RXTX"
+		},
+		{
+			"name": "ESP32 HijoTOFGPS",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
