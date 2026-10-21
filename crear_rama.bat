@@ -11,13 +11,26 @@ if "%apellido%"=="" (
 
 echo.
 echo Actualizando main...
+
 git checkout main
 git pull origin main
 
 echo.
-echo Creando rama %apellido%...
-git checkout -b "%apellido%"
+echo Verificando rama %apellido%...
+
+git show-ref --verify --quiet refs/heads/%apellido%
+
+if %errorlevel%==0 (
+    echo La rama %apellido% ya existe.
+    echo Cambiando a la rama...
+    git checkout %apellido%
+) else (
+    echo Creando rama %apellido%...
+    git checkout -b %apellido%
+)
 
 echo.
-echo Rama creada correctamente: %apellido%
+echo Rama actual:
+git branch --show-current
+
 pause
