@@ -1,0 +1,32 @@
+# Python y entornos locales
+**/__pycache__/
+**/*.py[cod]
+**/.venv/
+**/.venv-*/
+.env
+**/.env
+**/.env.*
+!**/.env.example
+
+# Compilaciones Qt, CMake y Flutter
+**/build/
+**/cmake-build-*/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/.dart_tool/
+**/.flutter-plugins-dependencies
+**/.gradle/
+**/.kotlin/
+**/ios/Flutter/ephemeral/
+**/macos/Flutter/ephemeral/
+**/android/local.properties
+**/.idea/
+
+# Credenciales locales de la prueba GPS
+GPS/ESP32_GPS/gps_secrets.h
+
+# Editores y sistema
+**/.vscode/
+**/Thumbs.db
+**/.DS_Store
+

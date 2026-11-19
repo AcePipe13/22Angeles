@@ -1,100 +1,27 @@
-# 22 Angeles Proyecto Diseño
-Este repositorio trae todo lo que hicimos en nuestro proyecto de Diseño Mecatrónico para el programa Ingeniería en Mecatrónica de la Universidad Militar Nueva Granada de Colombia
+# 22 Ángeles — silla de ruedas eléctrica
 
-# Si no quieren complicarse la vida
+Proyecto de Diseño Mecatrónico del programa de Ingeniería en Mecatrónica de la Universidad Militar Nueva Granada (Colombia). El repositorio reúne el diseño de una silla de ruedas eléctrica y los prototipos de sus sistemas mecánicos, electrónicos, de control, interfaz y adquisición de datos.
 
-Este tutorial explica cómo usar los dos archivos `.bat` para trabajar con el repositorio sin tener que escribir todos los comandos de Git manualmente.
+## Áreas del proyecto
 
-## Antes de empezar
+| Área | Contenido | Documentación |
+| --- | --- | --- |
+| Mecánica | Ensambles de SolidWorks, accesorios, estudios y dimensionamiento de motores. | [Diseño mecánico](Diseno_Silla_SolidWorks/README.md) y [cálculos](Calculos_Motores/) |
+| Electrónica | Esquemas eléctricos, imágenes y modelos 3D de las placas. | [Electrónica](Electronica_PCB/README.md) |
+| Control | Firmware para motores y encoders, caracterización, simulaciones y herramientas de prueba. | [Control](Control/README.md) |
+| IA y Datos | Pruebas ESP32, sensores, cámara, GPS, aplicación celular e interfaz de usuario. | [IA y Datos](IaDatos/README.md) |
 
-Necesitas:
+## Cómo se relacionan los módulos
 
-- Tener **Git** instalado:  
-  - `https://git-scm.com/install/windows`
-- Tener descargado/clonado el repositorio en tu PC.
-  - `git clone https://github.com/AcePipe13/22Angeles/`
-- Colocar estos dos archivos dentro de la carpeta del repositorio:
-  - `crear_rama.bat`
-  - `subir_cambios.bat`
+El diseño mecánico define la estructura, las ruedas, la transmisión y los soportes de los accesorios. La electrónica documenta las placas y conexiones. Control contiene el programa que regula la velocidad de los motores con realimentación de encoders. IA y Datos agrupa la lectura de sensores, la presentación de información y las pruebas de comunicación y GPS.
 
-La estructura puede quedar así:
+Estas carpetas incluyen diseños y pruebas en diferentes etapas. La presencia de un modelo o una pantalla no demuestra por sí sola que el accesorio esté integrado y validado en la silla. Cada README de área indica qué archivo usar como referencia y qué queda por comprobar en el hardware.
 
-```text
-22Angeles/
-├── crear_rama.bat
-├── subir_cambios.bat
-├── README.md
-└── ...
-```
+## Por dónde empezar
 
-## 1. Crear tu rama
+1. Abrir el README del área de interés en la tabla anterior.
+2. Identificar allí el ensamble, esquema o programa de referencia y sus dependencias.
+3. Revisar el cableado, la alimentación y los parámetros del equipo real antes de ejecutar firmware o conectar motores.
+4. Para colaborar mediante ramas y pull requests, seguir la [guía de Git](main/Tutorial_Git.md). En Windows también están disponibles `crear_rama.bat` y `subir_cambios.bat` en la raíz.
 
-Abre una terminal dentro de la carpeta del repositorio.
-
-Puedes hacerlo entrando a la carpeta con:
-
-```cmd
-cd ruta\de\tu\repositorio
-```
-
-Después ejecuta:
-
-```cmd
-crear_rama.bat
-```
-
-También puedes usar:
-
-```powershell
-.\crear_rama.bat
-```
-
-El programa te pedirá tu apellido y área:
-
-```text
-Introduce tu Apellido-Area: Valderrama-Finanzas 
-```
-
-Al terminar, estarás trabajando en tu propia rama.
-
-## 2. Subir tus cambios
-
-Cuando hayas terminado tu trabajo, vuelve a abrir la terminal dentro de la carpeta del repositorio y ejecuta:
-
-```cmd
-subir_cambios.bat
-```
-
-El programa te pedirá dos datos:
-
-```text
-Introduce la descripcion del cambio: Añadido ejercicio 3
-Introduce tu Apellido-Area: Valderrama-Finanzas
-```
-
-Tus cambios quedarán subidos a GitHub en la rama `Valderrama-Finanzas`.
-
-## Resumen
-
-La idea es sencilla:
-
-```text
-1. crear_rama.bat
-   ↓
-   Escribes tu apellido y área
-   ↓
-   Se crea tu rama
-
-2. Haces tus cambios
-   ↓
-
-3. subir_cambios.bat
-   ↓
-   Escribes la descripción, tu apellido y área
-   ↓
-   Se crea el commit y se sube a GitHub
-```
-
-Así no hace falta escribir todos los comandos de Git a mano.
-
-> **Importante:** ejecuta los `.bat` desde la carpeta del repositorio y asegúrate de tener Git configurado y acceso al repositorio de GitHub.
+Los archivos de compilación y los entornos locales se excluyen mediante `.gitignore` en las áreas correspondientes. Las credenciales Wi-Fi de las pruebas GPS se guardan en un archivo local ignorado por Git; el [README de IA y Datos](IaDatos/README.md) explica cómo configurarlo.
