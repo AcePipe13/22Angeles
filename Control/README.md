@@ -22,4 +22,4 @@ Antes de mover la silla, confirmar en el montaje real el sentido de giro, los ca
 
 ## Datos y relación con otras áreas
 
-Los CSV en `caracterizacion/primera_etapa/datos_caracterizacion/` son mediciones originales. Los archivos temporales de MATLAB y Simulink se excluyen mediante `.gitignore`. El dimensionamiento mecánico del motor está en [`Calculos_Motores/`](../Calculos_Motores/), los esquemas en [Electrónica](../Electronica_PCB/README.md) y las pruebas GPS en [`IaDatos/GPS/`](../IaDatos/GPS/).
+Los CSV en `caracterizacion/primera_etapa/datos_caracterizacion/` son mediciones originales. Los archivos temporales de MATLAB y Simulink se excluyen mediante `.gitignore`. El dimensionamiento mecánico del motor está en [`Calculos_Motores/`](../Mecanica/Calculos_Motores/), los esquemas en [Electrónica](../Electronica_PCB/README.md) y las pruebas GPS en [`IaDatos/GPS/`](../IaDatos/GPS/).

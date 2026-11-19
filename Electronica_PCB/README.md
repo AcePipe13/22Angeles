@@ -12,7 +12,7 @@ Esta carpeta documenta la electrónica de la silla de ruedas eléctrica mediante
 | `Esquematicos/Schematic_Potencia.pdf` | Circuito de potencia. |
 | `3D_PCB/` | Imágenes y modelos SolidWorks de las placas de control e IA y Datos. |
 
-Los modelos de componentes electrónicos ubicados en `Diseno_Silla_SolidWorks/Silla_V8.0/Electronica/` muestran su integración mecánica en el ensamble de la silla. El firmware de los motores y las pruebas de sensores se encuentran en [Control](../Control/README.md) e [IA y Datos](../IaDatos/README.md), respectivamente.
+Los modelos de componentes electrónicos ubicados en `Mecanica/Diseno_Silla_SolidWorks/Silla_V8.0/Electronica/` muestran su integración mecánica en el ensamble de la silla. El firmware de los motores y las pruebas de sensores se encuentran en [Control](../Control/README.md) e [IA y Datos](../IaDatos/README.md), respectivamente.
 
 ## Uso y estado
 
