@@ -11,7 +11,7 @@ Esta carpeta contiene los modelos de SolidWorks de la silla de ruedas eléctrica
 | `Estudios_Mecanicos/` | Modelo de estructura soldada y archivos de análisis. |
 | `Pruebas_de_Control/` | Modelos de montaje, motor, encoder y acople usados en pruebas. |
 
-En `Silla_V8.0/Accesorios/` hay modelos de batería, joystick, pantalla, sensor cardíaco y sensor de distancia TOF. La carpeta `Silla_V8.0/Electronica/` contiene representaciones mecánicas de componentes electrónicos. Los esquemas eléctricos están documentados por el área de [Electrónica](../Electronica_PCB/README.md).
+En `Silla_V8.0/Accesorios/` hay modelos de batería, joystick, pantalla, sensor cardíaco y sensor de distancia TOF. La carpeta `Silla_V8.0/Electronica/` contiene representaciones mecánicas de componentes electrónicos. Los esquemas eléctricos están documentados por el área de [Electrónica](../../Electronica_PCB/README.md).
 
 ## Archivo de referencia y cálculos
 

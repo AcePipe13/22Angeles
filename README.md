@@ -6,7 +6,7 @@ Proyecto de Diseño Mecatrónico del programa de Ingeniería en Mecatrónica de 
 
 | Área | Contenido | Documentación |
 | --- | --- | --- |
-| Mecánica | Ensambles de SolidWorks, accesorios, estudios y dimensionamiento de motores. | [Diseño mecánico](Diseno_Silla_SolidWorks/README.md) y [cálculos](Calculos_Motores/) |
+| Mecánica | Ensambles de SolidWorks, accesorios, estudios y dimensionamiento de motores. | [Mecánica](Mecanica/README.md) |
 | Electrónica | Esquemas eléctricos, imágenes y modelos 3D de las placas. | [Electrónica](Electronica_PCB/README.md) |
 | Control | Firmware para motores y encoders, caracterización, simulaciones y herramientas de prueba. | [Control](Control/README.md) |
 | IA y Datos | Pruebas ESP32, sensores, cámara, GPS, aplicación celular e interfaz de usuario. | [IA y Datos](IaDatos/README.md) |
@@ -22,6 +22,6 @@ Estas carpetas incluyen diseños y pruebas en diferentes etapas. La presencia de
 1. Abrir el README del área de interés en la tabla anterior.
 2. Identificar allí el ensamble, esquema o programa de referencia y sus dependencias.
 3. Revisar el cableado, la alimentación y los parámetros del equipo real antes de ejecutar firmware o conectar motores.
-4. Para colaborar mediante ramas y pull requests, seguir la [guía de Git](main/Tutorial_Git.md). En Windows también están disponibles `crear_rama.bat` y `subir_cambios.bat` en la raíz.
+4. Para colaborar mediante ramas y pull requests, seguir la [guía rápida de los .bat](docs/Guia_rapida_BAT.md) o la [guía de Git](docs/Flujo_Git_y_PR.md). En Windows también están disponibles `crear_rama.bat` y `subir_cambios.bat` en la raíz.
 
 Los archivos de compilación y los entornos locales se excluyen mediante `.gitignore` en las áreas correspondientes. Las credenciales Wi-Fi de las pruebas GPS se guardan en un archivo local ignorado por Git; el [README de IA y Datos](IaDatos/README.md) explica cómo configurarlo.
